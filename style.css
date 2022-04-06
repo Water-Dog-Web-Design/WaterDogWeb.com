@@ -1,9 +1,10 @@
 /* <---------------------->
-<------Style-Reset----->
-<----------------------> */
+   <------Style Reset----->
+   <----------------------> */
 
 * {
   box-sizing: border-box;
+  /* margin: 0; */
 }
 
 body {
@@ -23,18 +24,29 @@ ul {
 }
 
 /* <---------------------->
-<--------Navbar-------->
-<----------------------> */
+   <-------utilities------>
+   <----------------------> */
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* <---------------------->
+   <--------Navbar-------->
+   <----------------------> */
 
 header {
   background-color: #18d2f7;
   padding: 1.25em 0;
+  margin: 0;
 }
 
 .nav {
   display: flex;
-  position: fixed;
+  position: sticky;
   width: 85%;
+  max-width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -44,10 +56,11 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 2em;
+  flex-wrap: wrap;
 }
 
 .nav-link {
-  color: white;
+  color: black;
   font-size: 1.25rem;
 }
 
@@ -58,11 +71,34 @@ header {
 
 .nav-link--button {
   color: #18d2f7;
-  background-color: white;
+  background-color: #fff;
   padding: 0.25em 0.75em;
   border-radius: 500px;
 }
 
 .nav-link--button:hover {
   border-bottom: none;
+}
+
+/* <---------------------->
+   <---------Hero--------->
+   <----------------------> */
+
+.hero {
+  background-color: #2a4e5e;
+  margin: 0;
+}
+
+.hero-title {
+  margin: 0 auto;
+  color: #fff;
+  width: 85%;
+}
+
+.hero-img {
+  background-image: url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  padding: 10em 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
