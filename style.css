@@ -33,6 +33,7 @@ header {
 
 .nav {
   display: flex;
+  position: fixed;
   width: 85%;
   margin: 0 auto;
   justify-content: space-between;
